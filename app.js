@@ -8,6 +8,7 @@ function MainCtrl($scope) {
 	$scope.msg = 'Angular'
 }
 
+
 angular.module('app', ['ngRoute'])
 .config(function($routeProvider, $sceProvider) {
 	$sceProvider.enabled(false)
