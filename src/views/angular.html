@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="../../dist/css/angular.css">
+
+
+<div>
+
+    <script type='text/ng-template' id='tpl-tab'>
+        <div class="nav nav-tabs mytab">
+            <li ng-repeat='t in tabs'><a href="#{{t}}">{{t}}</a></li>
+        </div>
+        <div ng-transclude class='tab-content'>
+
+        </div>
+    </script>
+
+    <script type='text/ng-template' id='tpl-pane'>
+        <div class='tab-pane' ng-transclude id='{{title}}'></div>
+    </script>
+
+
+
+
+    <tab>
+        <pane title='标签1'>
+            <p red-large bg>标签1</p>
+        </pane>
+        <pane title='标签2'>标签2</pane>
+    </tab>
+</div>

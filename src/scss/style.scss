@@ -1,0 +1,33 @@
+@import 'common';
+
+$color: #fff;
+
+
+body {
+  background: $color;
+}
+
+[ng-view] {
+  padding: 0px;
+}
+
+#main {
+  .nav-tabs:not(.mytab) {
+    // display: none;
+    position: fixed;
+    top: -28px;
+    z-index: 1000;
+    width: 100%;
+    transition: top .5s, opacity .5s;
+    opacity: 0;
+    background: #fff;
+
+    &:hover {
+      top: 0;
+      opacity: 1;
+    }
+  }
+}
+
+
+
